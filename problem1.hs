@@ -1,6 +1,5 @@
 main = do
   let n = 1000
   let x =  [1..n-1]
-  print(x)
   let multuplesList = [x |x <- x, (x `mod` 3 == 0) || (x `mod` 5 == 0)]
   print (sum multuplesList)
